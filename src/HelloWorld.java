@@ -4,5 +4,6 @@ public class HelloWorld {
         System.out.println("Furina my queen!");
         System.out.println("Neuvillete my goat also!");
         System.out.println("I lost my 50 50!");
+        System.out.println("Yo my screen is so crisp");
     }
 }
