@@ -12,6 +12,12 @@ public class WhileLoopFun {
      lines)
      */
     public void printDigits(int number) {
+        int i = 1;
+        String numberInString = "" + number;
+        while (i <= numberInString.length()) {
+
+            i++;
+        }
         System.out.println(number % 10);
     }
 
@@ -83,9 +89,13 @@ public class WhileLoopFun {
         int currentNumber = 1;
         int counter = 0;
         while (currentNumber <= number) {
+            System.out.println(currentNumber);
+            System.out.println(number);
+            System.out.println(counter);
             if (number % currentNumber == 0) {
                 counter++;
             }
+            currentNumber++;
         }
         return (counter == 2);
     }
