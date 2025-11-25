@@ -3,5 +3,6 @@ public class FunTimes {
         System.out.println("Gojo the goat!");
         System.out.println("bruh");
         System.out.println("hi");
+        System.out.println("a");
     }
 }
