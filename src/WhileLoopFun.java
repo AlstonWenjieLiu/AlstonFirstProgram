@@ -15,10 +15,9 @@ public class WhileLoopFun {
         int i = 1;
         String numberInString = "" + number;
         while (i <= numberInString.length()) {
-
+            System.out.println(numberInString.substring(numberInString.length() - i, numberInString.length() - i + 1));
             i++;
         }
-        System.out.println(number % 10);
     }
 
     /** Returns the number of times letter occurs in word.
@@ -67,10 +66,14 @@ public class WhileLoopFun {
      */
     public int maxDoubles(int number, int threshold) {
         int currentNumber = number;
-        while (currentNumber > threshold) {
-            number = number * number;
+        int count = 0;
+        while (currentNumber <= threshold) {
+            currentNumber = currentNumber * 2;
+            if (currentNumber <= threshold) {
+                count++;
+            }
         }
-        return currentNumber / number;
+        return count;
     }
 
     /**Returns true if number is prime (i.e. it has exactly two divisors: 1 and itself) and false
@@ -89,9 +92,7 @@ public class WhileLoopFun {
         int currentNumber = 1;
         int counter = 0;
         while (currentNumber <= number) {
-            System.out.println(currentNumber);
-            System.out.println(number);
-            System.out.println(counter);
+
             if (number % currentNumber == 0) {
                 counter++;
             }
